@@ -9,10 +9,12 @@ import {
 } from "components/TwoColumn";
 import Image from "next/image";
 import eyecatch from "images/about.jpg"
+import Meta from "components/Meta";
 
 const About = () => {
   return (
     <Container>
+      <Meta pageTitle="About" pageDesc="私について" pageImg={eyecatch.src} pageImgW={eyecatch.width} pageImgH={eyecatch.height}/>
       <Hero title="About" subtitle="私について" />
       <figure>
         <Image 
