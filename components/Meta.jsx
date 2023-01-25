@@ -2,7 +2,7 @@ import Head from "next/head";
 import { siteMeta } from "lib/constants";
 import { useRouter } from "next/router";
 import siteImg from 'images/ogp.jpg';
-const { siteDesc, siteIcon, siteLang, siteTitle, siteType, siteUrl, siteLocale } = siteMeta;
+const { siteDesc, siteIcon,  siteTitle, siteType, siteUrl, siteLocale } = siteMeta;
 const Meta = ({ pageTitle, pageDesc, pageImg, pageImgW, pageImgH }) => {
   const title = pageTitle ? `${pageTitle} | ${siteTitle}` : siteTitle;
   const desc = pageDesc ?? siteDesc
@@ -11,7 +11,7 @@ const Meta = ({ pageTitle, pageDesc, pageImg, pageImgW, pageImgH }) => {
  const img = pageImg || siteImg.src
  const imgW = pageImgW || siteImg.width
  const imgH = pageImgH || siteImg.height
- const imgUrl = img.startsWiith('https') ? img : `${siteUrl}${img}`
+ const imgUrl = img ? img : `${siteUrl}${img}`
 
   return (
     <Head>
