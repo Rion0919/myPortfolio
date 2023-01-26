@@ -6,6 +6,7 @@ import { getPlaiceholder } from "plaiceholder";
 import { eyecatchLocal } from "lib/constants";
 import Posts from "components/Posts";
 import Pagination from "components/Pagination";
+import Portfolios from "components/Portfolios";
 
 export default function Home({ posts }) {
   return (
@@ -14,6 +15,8 @@ export default function Home({ posts }) {
       <Hero title="Rion's ROOM" subtitle="ポートフォリオサイトです" imageOn />
       <Posts posts={posts} />
       <Pagination nextUrl="/blog" nextText="MorePosts" />
+      <Portfolios />
+      <Pagination nextUrl="/portfolio" nextText="MorePortfolios" />
     </Container>
   );
 }
