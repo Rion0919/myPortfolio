@@ -13,10 +13,21 @@ export default function Home({ posts }) {
     <Container>
       <Meta />
       <Hero title="Rion's ROOM" subtitle="ポートフォリオサイトです" imageOn />
-      <Posts posts={posts} />
-      <Pagination nextUrl="/blog" nextText="MorePosts" />
+      <h1 className="contentName">Portfolio</h1>
       <Portfolios />
       <Pagination nextUrl="/portfolio" nextText="MorePortfolios" />
+      <hr />
+      <h1 className="contentName">Blog</h1>
+      <Posts posts={posts} />
+      <Pagination nextUrl="/blog" nextText="MorePosts" />
+      <style jsx>{`
+        .contentName {
+          font-weight: 400;
+          font-size: 50px;
+          text-align: center;
+          margin-bottom: 100px;
+        }
+      `}</style>
     </Container>
   );
 }
