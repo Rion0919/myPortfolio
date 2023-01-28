@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "src/styles/Portfolios.module.css";
+import styles from "src/styles/portfolios.module.css";
 // import flexibleTodos from 'images/flexibleTodos.png'
 const data = require('../lib/portfolio.json')
 
