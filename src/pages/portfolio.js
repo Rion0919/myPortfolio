@@ -8,7 +8,7 @@ export default function Portfolio() {
     <Container>
       <Meta pageTitle="Portfolio" pageDesc="私の作品"/>
 
-      <Hero title="Portfolio" subtitle="私の作品" imageOn/>
+      <Hero title="Portfolio" subtitle="私の作品"/>
         <Portfolios />
     </Container>
   );

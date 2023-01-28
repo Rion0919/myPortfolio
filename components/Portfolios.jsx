@@ -1,75 +1,33 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "src/styles/Portfolios.module.css";
-import flexibleTodos from 'images/flexibleTodos.png'
+// import flexibleTodos from 'images/flexibleTodos.png'
+const data = require('../lib/portfolio.json')
 
 export default function Portfolios() {
+  // console.log(data);
   return (
     <div className={styles.gridContainer}>
-      <article className={styles.post}>
-        <Link href="https://flexible-todos.vercel.app/">
+      {data.portfolios.map((d, i) => (
+        <article className={styles.post} key={i}>
+        <Link href={d.url}>
           <a>
             <figure>
               <Image
-                  src={flexibleTodos}
+                  src={d.image}
+                  // src={flexibleTodos}
                   alt=""
                   layout="fill"
                   objectFit="cover"
                   sizes="(min-width: 1152px) 576px, 50vw"
                 />
             </figure>
-            <h2>app 1</h2>
+            <h2>{d.name}</h2>
+            <p>{d.description}</p>
           </a>
         </Link>
       </article>
-      <article className={styles.post}>
-        <Link href="https://flexible-todos.vercel.app/">
-          <a>
-            <figure>
-              <Image
-                  src="/eyecatch.jpg"
-                  alt=""
-                  layout="fill"
-                  objectFit="cover"
-                  sizes="(min-width: 1152px) 576px, 50vw"
-                />
-            </figure>
-            <h2>app 2</h2>
-          </a>
-        </Link>
-      </article>
-      <article className={styles.post}>
-        <Link href="https://flexible-todos.vercel.app/">
-          <a>
-            <figure>
-              <Image
-                  src="/eyecatch.jpg"
-                  alt=""
-                  layout="fill"
-                  objectFit="cover"
-                  sizes="(min-width: 1152px) 576px, 50vw"
-                />
-            </figure>
-            <h2>app 3</h2>
-          </a>
-        </Link>
-      </article>
-      <article className={styles.post}>
-        <Link href="https://flexible-todos.vercel.app/">
-          <a>
-            <figure>
-              <Image
-                  src="/eyecatch.jpg"
-                  alt=""
-                  layout="fill"
-                  objectFit="cover"
-                  sizes="(min-width: 1152px) 576px, 50vw"
-                />
-            </figure>
-            <h2>app 4</h2>
-          </a>
-        </Link>
-      </article>
+      ))}
     </div>
   );
 }
