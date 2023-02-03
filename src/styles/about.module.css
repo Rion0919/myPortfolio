@@ -1,0 +1,15 @@
+.grid {
+    margin-top: 20px;
+    display: flex;
+}
+
+.grid ul {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.title {
+    margin: 0;
+    font-weight: 800;
+    min-width: 80px;
+}
