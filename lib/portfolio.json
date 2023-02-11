@@ -15,8 +15,8 @@
         },
         {
             "name": "Weather-Report",
-            "url": "https://flexible-todos.vercel.app/",
-            "image": "/flexibleTodos.png",
+            "url": "https://weather-report-topaz.vercel.app/",
+            "image": "/weatherReport.png",
             "description": "お天気アプリです。"
 
         },
