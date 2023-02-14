@@ -21,10 +21,10 @@
 
         },
         {
-            "name": "App4",
+            "name": "Frontman(開発中)",
             "url": "https://flexible-todos.vercel.app/",
-            "image": "/flexibleTodos.png",
-            "description": "アプリ4です。"
+            "image": "/frontman.png",
+            "description": "ホテルのフロント業務を管理するアプリです。(現在はFlexible todosに遷移します)"
 
         }
     ]
