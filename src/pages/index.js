@@ -12,7 +12,7 @@ export default function Home({ posts }) {
   return (
     <Container>
       <Meta />
-      <Hero title="Rion's ROOM" subtitle="ポートフォリオサイトです" imageOn />
+      <Hero title="Rion's ROOM" subtitle="とある専門生のポートフォリオサイトです" imageOn />
       <h1 className="contentName">Portfolio</h1>
       <Portfolios />
       <Pagination nextUrl="/portfolio" nextText="MorePortfolios" />
