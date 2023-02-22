@@ -22,9 +22,9 @@
         },
         {
             "name": "Frontman(開発中)",
-            "url": "https://flexible-todos.vercel.app/",
+            "url": "https://frontman-bf7qyy7gd-rion0919.vercel.app/",
             "image": "/frontman.png",
-            "description": "ホテルのフロント業務を管理するアプリです。(現在はFlexible todosに遷移します)"
+            "description": "ホテルのフロント業務を管理するアプリです。テストアカウント用メールアドレス：admin@example.com パスワード：admin1234"
 
         }
     ]
