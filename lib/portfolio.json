@@ -7,13 +7,6 @@
             "description": "ドラッグ&ドロップで動かせるTodoアプリです。"
         },
         {
-            "name": "News-App",
-            "url": "https://newsapp-nhgjdg7bh-rion0919.vercel.app/",
-            "image": "/newsapp.png",
-            "description": "シンプルなニュースアプリです。"
-
-        },
-        {
             "name": "Weather-Report",
             "url": "https://weather-report-topaz.vercel.app/",
             "image": "/weatherReport.png",
