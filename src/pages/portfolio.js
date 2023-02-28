@@ -9,6 +9,7 @@ export default function Portfolio() {
       <Meta pageTitle="Portfolio" pageDesc="私の作品"/>
 
       <Hero title="Portfolio" subtitle="私の作品"/>
+      <p>各アプリの説明はブログページを参照下さい。</p>
         <Portfolios />
     </Container>
   );

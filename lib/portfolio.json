@@ -14,10 +14,10 @@
 
         },
         {
-            "name": "Frontman(開発中)",
+            "name": "Frontman",
             "url": "https://frontman-bf7qyy7gd-rion0919.vercel.app/",
             "image": "/frontman.png",
-            "description": "ホテルのフロント業務を管理するアプリです。"
+            "description": "ホテルのフロント業務を管理するアプリです。テストアカウント用メールアドレス：admin@example.com, パスワード：admin1234"
 
         }
     ]
